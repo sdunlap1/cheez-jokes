@@ -6,15 +6,23 @@
   color: tomato;
 }
 
-.JokeList-getmore {
+.JokeList-getmore,
+.JokeList-reset {
   margin: 1em 0;
-  font-size: 150%;
-  border-radius: 0.5em;
+  font-size: 110%;
+  border-radius: 0.4em;
   background-color: tomato;
   color: white;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
 }
 
-.JokeList-getmore:disabled {
+.JokeList-getmore {
+  margin-right: 1em; /* Add spacing between the buttons */
+}
+
+.JokeList-getmore:disabled, .JokeList-reset:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
